@@ -9,8 +9,6 @@ Data is a critical aspect of any project or system, and having a robust backup s
 The Backup Script:
 Let's start by creating a Bash script that performs a basic backup of a specified directory. Open your favorite text editor and create a file named backup.sh. Here's a sample script:
 
-bash
-Copy code
 #!/bin/bash
 
 source_dir="/home/ubuntu/Projects"
@@ -37,13 +35,9 @@ Now that we have our backup script, let's automate it using cron.
 
 Open your crontab file for editing:
 
-bash
-Copy code
 crontab -e
 Add a line to schedule the script. For example, to run the script every day at 2 AM:
 
-bash
-Copy code
 0 2 * * * /path/to/your/backup.sh
 Replace /path/to/your/backup.sh with the actual path to your backup script.
 
